@@ -84,3 +84,79 @@ li {
 .services-table tbody tr:hover {
   background-color: #dee3e7;
 }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bi-twitter-x {
+  animation: spin 2s linear infinite;
+}
+/* @media (prefers-reduced-motion: reduce) {
+  .bi-twitter-x {
+    animation: none;
+  }
+} */
+
+@keyframes color-change {
+  0% {
+    color: white;
+  }
+  50% {
+    color: #1DA1F2;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.bi-facebook {
+  animation: color-change 3s ease-in-out infinite;
+}
+/* @media (prefers-reduced-motion: reduce) {
+  .bi-facebook {
+    animation: none;
+  }
+} */
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid white;
+  border-top: 5px solid rgb(94, 126, 216);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+/* @media (prefers-reduced-motion: reduce) {
+  .loader {
+    animation: none;
+  }
+} */
+.service-item {
+    background: linear-gradient(45deg, rgb(49, 51, 51), #99ccc9, #24a1bd);
+    background-size: 300% 300%;
+    animation: gradientMove 6s ease infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.figure {
+  width: 70px;
+  height: 70px;
+  border: 10px white;
+  background: black;
+  margin-left: 200px;
+
+  animation: float 5s ease-in-out infinite;
+}
+
+
