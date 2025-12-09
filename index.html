@@ -720,6 +720,81 @@
       </div>
 
     </section><!-- /Contact Section -->
+    <!-- Po kontaktų sekcijos (po </section> tag'o) pridėkite: -->
+
+<!-- Žaidimo sekcija -->
+<section id="memory-game" class="memory-game">
+    <div class="container">
+        <h2>Mano Žaidimas</h2>
+        <p>Pamėginkite savo atmintį su šiuo įdomiu žaidimu!</p>
+        
+        <!-- Sudėtingumo pasirinkimas -->
+        <div class="difficulty">
+            <h4>Pasirinkite lygį:</h4>
+            <div class="difficulty-buttons">
+                <button class="btn easy active" data-level="easy">Lengvas (4×3)</button>
+                <button class="btn hard" data-level="hard">Sunkus (6×4)</button>
+            </div>
+        </div>
+        
+        <!-- Žaidimo valdymas -->
+        <div class="game-controls">
+            <button id="startBtn" class="btn start-btn">Start</button>
+            <button id="resetBtn" class="btn reset-btn" disabled>Atnaujinti</button>
+        </div>
+        
+        <!-- Statistikos rodikliai -->
+        <!-- Statistikos bloką papildykite: -->
+<div class="stats">
+    <div class="stat-item">
+        <span class="stat-label">Ėjimai:</span>
+        <span id="movesCount" class="stat-value">0</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-label">Laikas:</span>
+        <span id="timerDisplay" class="stat-value">00:00</span>
+    </div>
+    <div class="stat-item">
+        <span class="stat-label">Poros:</span>
+        <span id="pairsCount" class="stat-value">0/6</span>
+    </div>
+</div>
+
+<!-- Geriausių rezultatų rodymui (po sudėtingumo pasirinkimu): -->
+<div class="best-scores">
+    <div id="easyBestScore" class="best-score easy-best" style="display: none;">
+        Lengvo lygio geriausias rezultatas: -
+    </div>
+    <div id="hardBestScore" class="best-score hard-best" style="display: none;">
+        Sunkių lygio geriausias rezultatas: -
+    </div>
+</div>
+
+<!-- Laimėjimo pranešimą papildykite laiku: -->
+<div id="winMessage" class="win-message" style="display: none;">
+    <div class="pranesimas-turinys">
+        <h3>Sveikiname!</h3>
+        <p>Jūs laimėjote žaidimą!</p>
+        <p>Visas poras radote per <span id="finalMoves">0</span> ėjimus!</p>
+        <p>Laikas: <span id="finalTime">00:00</span></p>
+        <button class="btn btn-primary" id="playAgainBtn">Žaisti dar kartą</button>
+    </div>
+</div>
+        
+        <!-- Žaidimo lenta -->
+        <div id="gameBoard" class="game-board">
+            <!-- Čia bus kortelės -->
+        </div>
+        
+        <!-- Laimėjimo pranešimas -->
+        <div id="winMessage" class="win-message" style="display: none;">
+            <h3>🎉 Sveikiname! 🎉</h3>
+            <p>Jūs laimėjote!</p>
+            <p>Visas poras radote per <span id="finalMoves">0</span> ėjimus!</p>
+            <button id="playAgainBtn" class="btn play-again-btn">Žaisti dar kartą</button>
+        </div>
+    </div>
+</section>
 
   </main>
 
