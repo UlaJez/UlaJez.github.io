@@ -158,5 +158,55 @@ li {
 
   animation: float 5s ease-in-out infinite;
 }
+.memory-game{
+  text-align: center;
+  background-color: #a5c7dc;
+  border-radius: 25px;
+  margin: auto;
+  max-width: 1200px;
+}
 
+.game-board {
+    display: grid;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
+.card {
+    aspect-ratio: 1;
+    min-height: 60px;
+}
+/* Geriausių rezultatų stilius */
+.best-scores {
+    text-align: center;
+    margin: 15px 0;
+    padding: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.best-score {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    padding: 5px;
+    background: white;
+    border-radius: 5px;
+    border-left: 3px solid #28a745;
+}
+
+.easy-best {
+    border-left-color: #28a745;
+}
+
+.hard-best {
+    border-left-color: #dc3545;
+}
+
+/* Laikmačio stilius */
+#timerDisplay {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 2px;
+}
